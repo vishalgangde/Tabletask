@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            
+
             background-color: whitesmoke;
         }
 
@@ -23,18 +23,14 @@
             margin: 25px;
         }
 
-        input {
+        /* input {
             margin: 25px;
-        }
+        } */
 
         i {
-            margin-right: 15px;
+
             border: 2px solid transparent;
             background-color: lightblue;
-        }
-
-        a {
-            margin-right: 55px;
         }
 
         span {
@@ -42,7 +38,7 @@
         }
 
         a.join {
-            margin-left: 50px;
+
             border: 2px solid black;
             background-color: blue;
             color: white;
@@ -50,29 +46,60 @@
         }
 
         a.join1 {
-            margin-left: 50px;
+
             border: 2px solid black;
             background-color: white;
             color: blue;
             border-radius: 5px;
+            font-size: 25px;
+        }
+        .join1:hover{
+            background-color: lightskyblue;
         }
 
-        h3 {
+        h3#test {
             margin-right: 390px;
         }
 
-        h1 {
-            border: 2px solid lightskyblue;
+        h1#ursera {
+            /* border: 2px solid lightskyblue; */
             background-color: lightskyblue;
             color: white;
+            margin-right: 330px;
             border-radius: 10px 8px;
-            font-family: Impact,'Arial Narrow Bold', sans-serif;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
         }
-        select,option:hover{
+
+        select,
+        option:hover {
             max-height: inherit;
             opacity: 1;
         }
-/* 
+
+        /* #login {
+            margin-left: 320px;
+        } */
+
+        #enterprise {
+            margin-left: 10px;
+            padding-left: 90px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        #get:hover {
+            background-color: honeydew;
+        }
+
+        /* #line {
+            margin-top: 10px;
+        } */
+
+        /*  
         i {
             margin-right: 120px;    
         } */
@@ -83,7 +110,7 @@
     <table>
         <tr>
             <th>
-                <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i>ursera</h1>
+                <h1 id="ursera"><i class="fa fa-graduation-cap" aria-hidden="true"></i>ursera</h1>
             </th>
             <th>
                 <select>
@@ -95,16 +122,17 @@
                 </select>
             </th>
             <th>
-                <input type="search" width="20" height="30" placeholder="What do you want to learn"><i class="fa fa-search"></i>
+                <input type="search" width="20" height="30" placeholder="What do you want to learn"><i
+                    class="fa fa-search" aria-hidden="true"></i>
             </th>
             <th>
-                <a style="text-decoration: none;" target="_blank"
+                <a id="enterprise" style="text-decoration: none;" target="_blank"
                     href="https://www.coursera.org/business/?utm_campaign=website&utm_content=corp-to-home-for-enterprise&utm_medium=coursera&utm_source=enterprise">
                     For Enterprise
                 </a>
             </th>
             <th>
-                <a style="text-decoration: none;" href="#">Log in</a>
+                <a id="login" style="text-decoration: none;" href="#">Login</a>
             </th>
             <th>
                 <a class="join" style="text-decoration: none;" target="_blank"
@@ -127,7 +155,7 @@
         </tr>
         <tr>
             <th id="test" colspan="6">
-                <h3>How to test your HTML</h3>
+                <h3 id="test">How to test your HTML</h3>
             </th>
         </tr>
         <tr>
@@ -135,6 +163,64 @@
                 <img id="image" src="bg.jpg" width="600" height="300">
             </th>
         </tr>
+        <footer>
+            <tr>
+                <th colspan="6">
+                    <div class="footer">
+                        <h1 id="explore">Explore our Catalog</h1>
+                        <h3 id="offer">Join for free and get personalized recommendations, updates and offers.</h3>
+                        <a class="join1" style="text-decoration: none;" target="_blank"
+                            href="https://www.coursera.org/lecture/web-development/how-to-test-your-html-LcPQX?authMode=signup">
+                            Get Started
+                        </a>
+                    </div>
+                    <hr id="line">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h1><i class="fa fa-graduation-cap" aria-hidden="true"></i>ursera</h1>
+                </th>
+                <th>
+                    <h4>Coursera</h4>
+                </th>
+                <th>
+                    <h4>Community</h4>
+                </th>
+                <th>
+                    <h4>Connect</h4>
+                </th>
+                <th>
+                    <h4>More</h4>
+                </th>
+
+            </tr>
+            <tr>
+                <th>
+                    <span style="text-align: left;color: gray;">
+                        <pre>
+                        Coursera provides universal access to the world’s
+                        best education, partnering with top universities
+                        and organizations to offer courses online.
+                        </pre>
+                    </span>
+                </th>
+                <th>
+                    <h4 style="color: gray;">About</h4>
+                </th>
+                <th>
+                    <h4 style="color: gray;">Leraners</h4>
+                </th>
+                <th>
+                    <h4 style="color: gray;">Blog</h4>
+                </th>
+                <th>
+                    <h4 style="color: gray;">Terms</h4>
+                </th>
+            </tr>
+
+        </footer>
+
 
     </table>
 </body>
